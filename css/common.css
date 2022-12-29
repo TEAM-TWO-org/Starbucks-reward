@@ -1,0 +1,235 @@
+/* 공통 요소 */
+@font-face {
+    font-family: sodosans-black;
+    src: url(../assets/font/SoDoSans-Black.woff);
+}
+@font-face {
+    font-family: sodosans-bold;
+    src: url(../assets/font/SoDoSans-Bold.woff);
+}
+@font-face {
+    font-family: sodosans-semi;
+    src: url(../assets/font/SoDoSans-SemiBold.woff);
+}
+@font-face {
+    font-family: sodosans-regular;
+    src: url(../assets/font/SoDoSans-Regular.woff);
+}
+@font-face {
+    font-family: sodosans-light;
+    src: url(../assets/font/SoDoSans-Light.woff);
+}
+@font-face {
+    font-family: sodosans-thin;
+    src: url(../assets/font/SoDoSans-Thin.woff);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h3 {
+    font-size: var(--sec-h4-size);
+    font-family: var(--font-light);
+}
+
+a {
+    font-family: sodosans-bold;
+}
+
+/* 헤더 공통요소 */
+header {
+    position: relative;
+    box-shadow: 0.1rem 0 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+header .m_header {
+    display: none;
+}
+
+header > div {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 144rem;
+}
+
+header > div > h1 {
+    margin-right: 4rem;
+    position: absolute;
+    right: 100%;
+}
+
+header > div > h1 > img {
+    width: 5rem;
+}
+
+header > div > nav > ul {
+    display: flex;
+}
+
+header > div > nav > ul > li {
+    margin-right: 3rem;
+}
+
+header > div > nav > ul > li:last-child {
+    margin-right: 0;
+}
+
+header > div > nav > ul > li > a {
+    display: block;
+    font-size: var(--nav-li-size);
+    font-family: var(--font-bold);
+    line-height: 1.5;
+    padding: 4rem 0;
+}
+
+header > div > nav > ul > li > a:hover {
+    color: var(--brand-common-color);
+}
+
+header > div > nav:nth-child(2) > ul > li > a {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+header > div > nav:nth-child(3) > ul > li > a {
+    letter-spacing: -0.05rem;
+    padding: 1rem 1.6rem;
+}
+
+header > div > nav:nth-child(3) > ul > li > a {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-semibold);
+}
+
+header > div > nav:nth-child(3) > ul > li > a > img {
+    width: var(--nav-li-size);
+    padding-right: 0.5rem;
+}
+
+header > div > nav:nth-child(3) > ul > button {
+    padding: 0.7rem 1.6rem;
+    border-radius: 2rem;
+    font-size: var(--nav-li-size);
+    font-family: var(--font-semibold);
+    line-height: 1;
+    box-sizing: border-box;
+    border: 0;
+}
+
+header > div > nav:nth-child(3) > ul > .signIn {
+    border: 0.1rem solid var(--common-color);
+    margin-right: 2rem;
+    background-color: #fff;
+}
+
+header > div > nav:nth-child(3) > ul > .joinNow {
+    background-color: #000;
+    color: #fff;
+}
+
+/* 푸터 공통요소 */
+footer {
+    margin-top: 4rem;
+}
+
+footer > hr {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 0.2rem;
+}
+footer > .footerWrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4.8rem;
+    padding-bottom: 3.2rem;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 144rem;
+}
+
+footer > .footerWrap > .summaryWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+footer > .footerWrap > .summaryWrap + hr {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 0.2rem;
+    border: 0;
+}
+
+footer > .footerWrap > .summaryWrap > .summary_list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 13.5%;
+    margin-right: 3rem;
+}
+
+footer > .footerWrap > .summaryWrap > .summary_list > h3 {
+    margin-bottom: 4rem;
+}
+
+footer > .footerWrap > .summaryWrap > .summary_list > .menu_remote {
+    display: none;
+}
+
+footer > .footerWrap > .summaryWrap > .summary_list > ul > li {
+    font-size: var(--sec-p-size);
+    font-family: var(--font-regular);
+    color: rgba(0, 0, 0, 0.58);
+    padding-bottom: 3rem;
+    line-height: 1.5;
+}
+
+footer > .footerWrap > .infoWrap {
+    margin-top: 4rem;
+}
+
+footer > .footerWrap > .infoWrap > .info_snsWrap {
+    display: flex;
+}
+
+footer > .footerWrap > .infoWrap > .info_snsWrap > div {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 2rem;
+}
+
+footer > .footerWrap > .infoWrap > .info_descWrap {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0;
+}
+footer > .footerWrap > .infoWrap > .info_descWrap > li {
+    position: relative;
+    font-size: var(--sec-p-size);
+    font-family: var(--font-regular);
+    margin-right: 6rem;
+}
+footer > .footerWrap > .infoWrap > .info_descWrap > li:after {
+    content: '';
+    position: absolute;
+    margin-left: 3rem;
+    width: 0.2rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer > .footerWrap > .infoWrap > .info_descWrap > li:last-child::after {
+    display: none;
+}
+
+footer > .footerWrap > .infoWrap > p {
+    font-size: var(--sec-p-size);
+    color: rgba(0, 0, 0, 0.58);
+}
