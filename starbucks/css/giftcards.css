@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'SoDoSans_Black';
+  src: url('../asset/font/SoDoSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'SoDoSans_Black_Bold';
+  src: url('../asset/font/SoDoSans-Bold.ttf');
+}
+
+* {
+  font-family: 'SoDoSans_Black';
+  padding: 0;
+  margin: 1rem 0 1rem 0;
+}
+
+img {
+  width: 20%;
+  margin: 6px;
+  border-radius: 7px 7px 7px 7px;
+}
+
+.cardWrap {
+  display: flex;
+  margin: 3rem 0 2rem 7rem;
+  align-items: center;
+}
+
+.cardName {
+  position: relative;
+  font-family: 'SoDoSans_Black_Bold';
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-right: auto;
+}
+
+.cardBtn {
+  position: relative;
+  background-color: white;
+  border: 0;
+  font-size: 14px;
+  color: green;
+  padding-right: 20px;
+}
+
+.cardList {
+  position: relative;
+  display: flex;
+  margin: 1rem 0 1rem 7rem;
+}
+
+#banner {
+  /* background-color: rgb(185, 220, 205); */
+  background-color: var(--sec-bg-color);
+  padding: 0 5rem 0 5rem;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#banner div,
+button {
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+#banner button {
+  position: relative;
+  height: 30px;
+  font-size: 15px;
+  width: 170px;
+}
+
+#banner button:nth-child(3) {
+  color: black;
+  background-color: transparent;
+  border: 0.5px solid #000;
+  border-radius: 20px 20px 20px 20px;
+}
+
+#banner button:nth-child(4) {
+  color: white;
+  background-color: black;
+  border: 0.5px solid #000;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 20%;
+}
