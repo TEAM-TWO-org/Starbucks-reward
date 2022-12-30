@@ -2,6 +2,7 @@
     margin: 0 auto;
 }
 main {
+    position: relative;
     padding-top: 9rem;
 }
 ul {
@@ -11,8 +12,10 @@ ul {
 /* menu-list * nav */
 
 .menuWrap {
+    position: relative;
     padding-left: 13rem;
     display: flex;
+    width: 90%;
 }
 
 .menu-list {
@@ -53,32 +56,32 @@ ul {
 }
 
 .menu-detail-item {
+    position: relative;
     width: 100%;
     padding-top: 2rem;
     margin-bottom: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .itemWrap {
-    width: 40%;
-    display: inline-block;
+    width: 49%;
     margin: 2rem 0;
 }
 .itemWrap > a {
-    width: 30%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .itemWrap > a > img {
-    position: relative;
     border-radius: 50%;
     width: 11rem;
-    vertical-align: middle;
-    text-align: justify;
 }
 .itemWrap > a > span {
-    vertical-align: middle;
     font-size: var(--bnr-p-size);
     font-family: var(--font-regular);
     padding-left: 2rem;
-    box-sizing: content-box;
-    display: inline-block;
-    /* white-space: nowrap; */
 }
