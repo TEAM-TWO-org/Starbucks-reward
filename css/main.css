@@ -57,12 +57,11 @@ ul {
 
 .menu-detail-item {
     position: relative;
-    width: 100%;
+    width: 90%;
     padding-top: 2rem;
     margin-bottom: 5rem;
-
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
 
@@ -84,4 +83,33 @@ ul {
     font-size: var(--bnr-p-size);
     font-family: var(--font-regular);
     padding-left: 2rem;
+}
+/* 핫커피 영역 */
+.hotcoffees {
+    width: 21%;
+}
+.hotcoffees > a {
+    display: inline-block;
+    text-align: center;
+}
+.hotcoffees > a > img {
+    width: 15rem;
+}
+.hotcoffees > a > span {
+    display: block;
+    padding-left: 0;
+    padding-top: 1.5rem;
+}
+.menuhotcoffees {
+    font-size: var(--sec-p-size);
+    font-family: var(--font-light);
+    color: rgba(0, 0, 0, 0.58);
+    margin-bottom: 2rem;
+}
+.menuhotcoffees > a {
+    cursor: pointer;
+    font-family: var(--font-light);
+}
+.menuhotcoffees > .litteTitle {
+    font-family: var(--font-semibold);
 }
