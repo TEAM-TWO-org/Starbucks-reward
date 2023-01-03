@@ -1,0 +1,48 @@
+.prdtop {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    padding: 2rem 0;
+    padding-left: 14.2rem;
+    font-size: var(--nav-li-size);
+    background: #ffffff;
+}
+.prdtop > a {
+    cursor: pointer;
+    font-family: var(--font-regular);
+}
+.prdtop_name {
+    font-family: var(--font-semibold);
+}
+
+.prdWrap {
+    width: 100%;
+    height: 100%;
+
+    background: var(--rewards-nav-bottom);
+}
+.prdheader {
+    display: flex;
+    align-items: center;
+    padding-left: 18rem;
+    padding-right: 2.8rem;
+}
+.prdheader_img {
+    margin-right: 12rem;
+}
+.prdheader_contents {
+    margin-left: 12rem;
+}
+.prdheader_contents > h1 {
+    font-family: var(--font-bold);
+    font-size: var(--bnr-h2-size);
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.prdheader_contents > span {
+    color: var(--sec-bg-color);
+    font-size: 2.4rem;
+}
+.prdheader_contents > button {
+    cursor: pointer;
+}
