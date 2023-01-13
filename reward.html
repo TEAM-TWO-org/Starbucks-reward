@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="./css/media.css" />
         <link rel="stylesheet" href="./css/product.css" />
         <link rel="stylesheet" href="./css/main.css" />
-        <script src="/reward.js"></script>
     </head>
     <body>
         <header>
@@ -349,10 +348,12 @@
                         Stars to your account.
                     </p>
                     <div>
-                        <div class="input_wrap">
-                            <label for="starcode" class="label">* Enter your Star Code</label>
-                            <input type="text" id="starcode" />
-                            <div class="starcode_error">X Please enter a Star code.</div>
+                        <div>
+                            <label for="starcode">* Enter your Star Code</label>
+                            <input type="text" id="starcode" onfocusout="focusout()" "/>
+                            <div class="starcode_error" display="none">
+                                <span class="color_red">X</span> Please enter a Star code.
+                            </div>
                         </div>
                         <button type="submit">submit</button>
                     </div>
@@ -365,6 +366,66 @@
                     </p>
                 </div>
             </div>
+            <script>
+                const $input = document.querySelector('.input_code > div > div > div > div');
+                const $label = document.querySelector(
+                    '.input_code > div > div > div > div > label'
+                );
+                console.log($label);
+                const $starcode = document.getElementById('starcode');
+                const $starcode_error = document.querySelector('.starcode_error');
+                console.dir($input);
+
+                function focusStarCode() {
+                    // $input.style.border = '1px solid green';
+                    // $label.style.top ='0';
+                    // $label.style.border='5px solid #fff';
+                    // $label.style.background ='#fff';
+                    // $label.style.color = 'green';
+                    // $label.style.fontSize ='1.6rem';
+                    change();
+                    $label.style.transition = '0.2s';
+                    $label.style.animationFillMode = 'forwards';
+                }
+
+                function handlekeyupStarCode() {
+                    if (!$starcode.value) {
+                        $starcode_error.style.display = 'block';
+
+                        $label.style.color = 'red';
+                    } else if ($starcode.value) {
+                        $starcode_error.style.display = 'none';
+                        $label.style.color = 'green';
+                    }
+                }
+
+                function blurStarCode() {
+                    if ($starcode.value) {
+                        $label.style.color = '#a7a7a7';
+                        $input.style.border = '0.1rem solid #a7a7a7';
+                    } else if (!$starcode.value) {
+                        $input.style.border = '1px solid red';
+                        $label.style.top = '50%';
+                        $label.style.border = '';
+                        $label.style.background = '';
+                        $label.style.color = 'red';
+                        $label.style.fontSize = '2.2rem';
+                        $starcode_error.style.display = 'block';
+                    }
+                }
+                function change() {
+                    $input.style.border = '1px solid green';
+                    $label.style.top = '0';
+                    $label.style.border = '5px solid #fff';
+                    $label.style.background = '#fff';
+                    $label.style.color = 'green';
+                    $label.style.fontSize = '1.6rem';
+                }
+
+                $starcode.addEventListener('focus', focusStarCode);
+                $starcode.addEventListener('keyup', handlekeyupStarCode);
+                $starcode.addEventListener('blur', blurStarCode);
+            </script>
         </section>
         <aside class="reward_aside">
             <div>

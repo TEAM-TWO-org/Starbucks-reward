@@ -28,8 +28,7 @@
                     <ul>
                         <li>
                             <a href=""
-                                ><img src="./assets/img/bxs-map.svg" alt="" />
-                                Find a store</a
+                                ><img src="./assets/img/bxs-map.svg" alt="" /> Find a store</a
                             >
                         </li>
                         <button class="signIn" onmouseover="">Sign in</button>
@@ -88,7 +87,7 @@
                     <div class="prdheader_contents">
                         <h1>Caffè Americano</h1>
 
-                        <span class="calories">15</span>
+                        <span class="calories">5</span>
                         <span>calories </span>
                     </div>
                 </div>
@@ -136,73 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <script>
-                        const $optionItems = document.querySelectorAll(
-                            ".size_option_item > img"
-                        );
 
-                        const optionImgList = [
-                            {
-                                src: "https://www.starbucks.com/app-assets/06ea008c02e29bbc7f8f9885c1f400f2.svg",
-                            },
-                            {
-                                src: "https://www.starbucks.com/app-assets/8f80d6b33459b4fada562d0c76fe0880.svg",
-                            },
-                            {
-                                src: "https://www.starbucks.com/app-assets/a35163e609f2058eee276482e80dc491.svg",
-                            },
-                            {
-                                src: "https://www.starbucks.com/app-assets/f3bd2f05578777d6c1a667ad64630cb4.svg",
-                            },
-                        ];
-
-                        let optionImg = [];
-
-                        for (let el of $optionItems) {
-                            optionImg.push(el.src);
-                        } // 처음 원본값을 담아줌.
-
-                        function handleClickOption() {
-                            //해당 이미지를 눌렀을때 바꾸기
-                            for (let i = 0; i < $optionItems.length; i++) {
-                                if (
-                                    $optionItems[i].src.includes(`${this.src}`)
-                                ) {
-                                    $optionItems[i].src = optionImgList[i].src;
-                                } else if (
-                                    !$optionItems[i].src.includes(`${this.src}`)
-                                ) {
-                                    $optionItems[i].src = optionImg[i];
-                                }
-                            }
-                        }
-
-                        for (let i = 0; i < $optionItems.length; i++) {
-                            $optionItems[i].addEventListener(
-                                "click",
-                                handleClickOption
-                            );
-                        }
-
-                        const $circleRemote = document.querySelector(
-                            ".size_options_circle_active"
-                        );
-
-                        console.log($circleRemote);
-
-                        const $optionList =
-                            document.querySelectorAll(".size_option_item");
-
-                        for (let i = 0; i < $optionList.length; i++) {
-                            $optionItems[i].addEventListener("click", () => {
-                                let circleWidth = $optionList[i].offsetWidth;
-
-                                $circleRemote.style.left = `${
-                                    circleWidth * i
-                                }px`;
-                            });
-                        }
-                    </script>
                     <div>
                         <img src="./assets/img/map-solid-24.png" alt="" />
                         <p>Select a store to view availability</p>
@@ -251,14 +184,12 @@
             <div class="aside_bnr">
                 <p>150★ item</p>
                 <p>
-                    Espresso shots topped with hot water create a light layer
-                    of<br />
-                    crema culminating in this wonderfully rich cup with depth
-                    and<br />
+                    Espresso shots topped with hot water create a light layer of<br />
+                    crema culminating in this wonderfully rich cup with depth and<br />
                     nuance.
                 </p>
                 <div>
-                    <p>15 calories, 0g sugar, 0g fat</p>
+                    <p><span class="calories">5</span> calories, 0g sugar, 0g fat</p>
                     <div class="caution"></div>
                 </div>
                 <a href="">Full nutrition & ingredients list</a>
@@ -344,5 +275,67 @@
                 </div>
             </div>
         </footer>
+        <script>
+            const $optionItems = document.querySelectorAll('.size_option_item > img');
+            const $calories = document.querySelectorAll('.calories');
+            const optionImgList = [
+                {
+                    src: 'https://www.starbucks.com/app-assets/06ea008c02e29bbc7f8f9885c1f400f2.svg',
+                },
+                {
+                    src: 'https://www.starbucks.com/app-assets/8f80d6b33459b4fada562d0c76fe0880.svg',
+                },
+                {
+                    src: 'https://www.starbucks.com/app-assets/a35163e609f2058eee276482e80dc491.svg',
+                },
+                {
+                    src: 'https://www.starbucks.com/app-assets/f3bd2f05578777d6c1a667ad64630cb4.svg',
+                },
+            ];
+
+            let optionImg = [];
+
+            for (let el of $optionItems) {
+                optionImg.push(el.src);
+            } // 처음 원본값을 담아줌.
+
+            function handleClickOption() {
+                //해당 이미지를 눌렀을때 바꾸기
+                for (let i = 0; i < $optionItems.length; i++) {
+                    if ($optionItems[i].src.includes(`${this.src}`)) {
+                        $optionItems[i].src = optionImgList[i].src;
+                        for (let j = 0; j < $calories.length; j++) {
+                            if (i == 0) {
+                                $calories[j].innerHTML = 5;
+                            } else if (i == 1) {
+                                $calories[j].innerHTML = 10;
+                            } else if (i == 2 || i == 3) {
+                                $calories[j].innerHTML = 15;
+                            }
+                        }
+                    } else if (!$optionItems[i].src.includes(`${this.src}`)) {
+                        $optionItems[i].src = optionImg[i];
+                    }
+                }
+            }
+
+            for (let i = 0; i < $optionItems.length; i++) {
+                $optionItems[i].addEventListener('click', handleClickOption);
+            }
+
+            const $circleRemote = document.querySelector('.size_options_circle_active');
+
+            console.log($circleRemote);
+
+            const $optionList = document.querySelectorAll('.size_option_item');
+
+            for (let i = 0; i < $optionList.length; i++) {
+                $optionItems[i].addEventListener('click', () => {
+                    let circleWidth = $optionList[i].offsetWidth;
+
+                    $circleRemote.style.left = `${circleWidth * i}px`;
+                });
+            }
+        </script>
     </body>
 </html>
