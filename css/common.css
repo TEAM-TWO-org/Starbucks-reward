@@ -1,0 +1,268 @@
+/* 공통 요소 */
+@font-face {
+    font-family: sodosans-black;
+    src: url(../assets/font/SoDoSans-Black.woff);
+}
+@font-face {
+    font-family: sodosans-bold;
+    src: url(../assets/font/SoDoSans-Bold.woff);
+}
+@font-face {
+    font-family: sodosans-semi;
+    src: url(../assets/font/SoDoSans-SemiBold.woff);
+}
+@font-face {
+    font-family: sodosans-regular;
+    src: url(../assets/font/SoDoSans-Regular.woff);
+}
+@font-face {
+    font-family: sodosans-light;
+    src: url(../assets/font/SoDoSans-Light.woff);
+}
+@font-face {
+    font-family: sodosans-thin;
+    src: url(../assets/font/SoDoSans-Thin.woff);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h3 {
+    font-size: var(--sec-h4-size);
+    font-family: var(--font-light);
+}
+
+h4 {
+    font-size: var(--sec-h5-size);
+    font-family: var(--font-light);
+}
+
+a {
+    font-family: sodosans-bold;
+    font-size: var(--nav-li-size);
+}
+
+/* 헤더 공통요소 */
+header {
+    position: relative;
+    /* box-shadow: 0.1rem 0 0.3rem rgba(0, 0, 0, 0.2); */
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+header .m_header {
+    display: none;
+}
+
+header > .pc_header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* 헤더 네비게이션 공통 요소 */
+header > .pc_header nav > ul {
+    display: flex;
+    align-items: center;
+}
+
+header > .pc_header nav > ul > li {
+    margin-right: 3rem;
+    text-transform: uppercase;
+}
+
+header > .pc_header nav > ul > li:last-child {
+    margin-right: 0;
+}
+
+/* 헤더 네비게이션 첫번째 요소 */
+header > .pc_header > div {
+    display: flex;
+    align-items: center;
+}
+
+header > .pc_header > div > h1 {
+    margin-right: 3rem;
+}
+
+header > .pc_header > div > h1 > img {
+    width: 5rem;
+}
+
+header > .pc_header > div > nav > ul > li {
+    letter-spacing: 0.1rem;
+}
+
+header > .pc_header > div > nav > ul > li > a {
+    display: block;
+    font-size: var(--nav-li-size);
+    font-family: var(--font-bold);
+    line-height: 1.5;
+    padding: 4rem 0;
+}
+
+header > .pc_header > div > nav > ul > li > a:hover {
+    color: var(--brand-common-color);
+}
+
+/* 헤더 네비게이션 두번째 요소 */
+header > .pc_header > nav:nth-child(2) > ul > li > a {
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+header > .pc_header > nav:nth-child(2) > ul > li > a {
+    letter-spacing: -0.05rem;
+    font-family: var(--font-light);
+    padding: 1rem 1.6rem;
+}
+
+header > .pc_header > nav:nth-child(2) > ul > li > a {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-semibold);
+}
+
+header > .pc_header > nav:nth-child(2) > ul > li > a > img {
+    width: var(--nav-li-size);
+    padding-right: 0.5rem;
+}
+
+header > .pc_header > nav:nth-child(2) > ul > button {
+    padding: 0.7rem 1.6rem;
+    border-radius: 2rem;
+    font-size: var(--nav-li-size);
+    font-family: var(--font-semibold);
+    line-height: 1;
+    box-sizing: border-box;
+    border: 0;
+}
+
+header > .pc_header > nav:nth-child(2) > ul > .signIn {
+    border: 0.1rem solid var(--common-color);
+    margin-right: 2rem;
+    background-color: #fff;
+}
+
+header > .pc_header > nav:nth-child(2) > ul > .joinNow {
+    background-color: #000;
+    color: #fff;
+}
+
+/* 푸터 공통요소 */
+
+footer > hr {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 0.2rem;
+}
+footer > .footerWrap {
+    display: flex;
+    flex-direction: column;
+
+    /* width: 95%;
+    margin: 0 auto; */
+    padding: 4.8rem 0 3.2rem 13rem;
+}
+
+footer > .footerWrap > .summaryWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+footer > .footerWrap > .summaryWrap + hr {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 0.2rem;
+    border: 0;
+}
+
+footer > .footerWrap > .summaryWrap > .summary_list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 13.5%;
+    margin-right: 3rem;
+}
+
+footer > .footerWrap > .summaryWrap > .summary_list > h4 {
+    margin-bottom: 4rem;
+}
+
+footer > .footerWrap > .summaryWrap > .summary_list > .menu_remote {
+    display: none;
+}
+
+footer > .footerWrap > .summaryWrap > .summary_list > ul > li {
+    font-size: var(--sec-p-size);
+    font-family: var(--font-regular);
+    color: rgba(0, 0, 0, 0.58);
+    padding-bottom: 3rem;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+footer > .footerWrap > .summaryWrap > .summary_list > ul > li:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+footer > .footerWrap > .infoWrap {
+    margin-top: 4rem;
+}
+
+footer > .footerWrap > .infoWrap > .info_snsWrap {
+    display: flex;
+}
+
+footer > .footerWrap > .infoWrap > .info_snsWrap > div {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+footer > .footerWrap > .infoWrap > .info_snsWrap > div:after {
+    content: "";
+    position: absolute;
+}
+
+footer > .footerWrap > .infoWrap > .info_descWrap {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0;
+}
+footer > .footerWrap > .infoWrap > .info_descWrap > li {
+    position: relative;
+    font-size: var(--sec-p-size);
+    font-family: var(--font-regular);
+    margin-right: 6rem;
+    cursor: pointer;
+}
+
+footer > .footerWrap > .infoWrap > .info_descWrap > li:hover {
+    text-decoration: underline;
+}
+footer > .footerWrap > .infoWrap > .info_descWrap > li:after {
+    content: "";
+    position: absolute;
+    margin-left: 3rem;
+    width: 0.2rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer > .footerWrap > .infoWrap > .info_descWrap > li:last-child::after {
+    display: none;
+}
+
+footer > .footerWrap > .infoWrap > p {
+    font-size: var(--sec-p-size);
+    color: rgba(0, 0, 0, 0.58);
+}

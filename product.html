@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu: Starbucks Coffee Company</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/root.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/media.css" />
+        <link rel="stylesheet" href="./css/product.css" />
+    </head>
+    <body>
+        <header>
+            <div class="pc_header">
+                <div>
+                    <h1><img src="./assets/img/logo.png" alt="" /></h1>
+                    <nav>
+                        <ul>
+                            <li><a href="./main.html">menu</a></li>
+                            <li><a href="./reward.html">rewards</a></li>
+                            <li><a href="">gift cards</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href=""
+                                ><img src="./assets/img/bxs-map.svg" alt="" /> Find a store</a
+                            >
+                        </li>
+                        <button class="signIn" onmouseover="">Sign in</button>
+                        <button class="joinNow" onmouseover="">Join now</button>
+                    </ul>
+                </nav>
+            </div>
+            <div class="m_header">
+                <h1><img src="./assets/img/logo.png" alt="" /></h1>
+                <nav class="m_navigationWrap">
+                    <div class="menuWrap" onclick="menuOpen()">
+                        <div class="menu-item"></div>
+                        <div class="menu-item"></div>
+                        <div class="menu-item"></div>
+                    </div>
+                    <div class="m_navigation">
+                        <ul>
+                            <li>Menu</li>
+                            <li>Rewards</li>
+                            <li>Gift Cards</li>
+                        </ul>
+                        <div class="arrow_menuWrap"></div>
+                        <hr />
+                        <ul>
+                            <button>Sign in</button>
+                            <button>Join now</button>
+                            <li>
+                                <a href=""><img src="" alt="" />Find a store</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="prdtopWrap">
+                <div class="prdtop">
+                    <a href="./main.html">Menu</a>
+                    <span>/</span>
+                    <a href="./hot-coffees.html">Hot Coffees</a>
+                    <span>/</span>
+                    <span class="prdtop_name">Caffè Americano</span>
+                </div>
+            </div>
+
+            <div class="prdWrap">
+                <div class="prdheader">
+                    <div class="prdheader_img">
+                        <img
+                            src="https://globalassets.starbucks.com/assets/f12bc8af498d45ed92c5d6f1dac64062.jpg?impolicy=1by1_wide_topcrop_630"
+                            alt=""
+                            width="300px"
+                            height="300px"
+                        />
+                    </div>
+                    <div class="prdheader_contents">
+                        <h1>Caffè Americano</h1>
+
+                        <span class="calories">5</span>
+                        <span>calories </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prdContents">
+                <div class="size_options">
+                    <h3>Size options</h3>
+                    <hr />
+                    <div>
+                        <div class="size_options_circle_active"></div>
+                        <div id="size_options_list">
+                            <div class="size_option_item">
+                                <img
+                                    src="https://www.starbucks.com/app-assets/0295bad53506b2b3c22b7e5a16fd1554.svg"
+                                    alt=""
+                                />
+                                <p>short</p>
+                                <span>8 fl oz</span>
+                            </div>
+                            <div class="size_option_item">
+                                <img
+                                    src="https://www.starbucks.com/app-assets/d57860098a9c7cb67f0d3f83bb851eb6.svg"
+                                    alt=""
+                                    id="active"
+                                />
+                                <p>tall</p>
+                                <span>12 fl oz</span>
+                            </div>
+                            <div class="size_option_item">
+                                <img
+                                    src="https://www.starbucks.com/app-assets/f1c3892d2d28cade899a1b6bd4ca5684.svg"
+                                    alt=""
+                                />
+                                <p>grande</p>
+                                <span>16 fl oz</span>
+                            </div>
+                            <div class="size_option_item">
+                                <img
+                                    src="https://www.starbucks.com/app-assets/8f4f6108fbeefb3455f09a631489b294.svg"
+                                    alt=""
+                                />
+                                <p>venti</p>
+                                <span>20 fl oz</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="./assets/img/map-solid-24.png" alt="" />
+                        <p>Select a store to view availability</p>
+                    </div>
+                </div>
+                <div class="customizations">
+                    <h3>Customizations</h3>
+                    <hr />
+                    <div>
+                        <div>
+                            <p>flavors</p>
+                            <button>Edit</button>
+                        </div>
+                        <div>
+                            <p>toppings</p>
+                            <button>Edit</button>
+                        </div>
+                        <div>
+                            <p>tea</p>
+                            <button>Edit</button>
+                        </div>
+                        <div>
+                            <p>sweeteners</p>
+                            <button>Edit</button>
+                        </div>
+                        <div>
+                            <p>water</p>
+                            <button>Edit</button>
+                        </div>
+                        <div>
+                            <p>4shots<br />signature espresso roast</p>
+                            <button>Edit</button>
+                        </div>
+                        <div>
+                            <p>cup options</p>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- <div class="down_scroller">
+            <a href="">Add To Order</a>
+        </div> -->
+        <aside>
+            <div class="aside_bnr">
+                <p>150★ item</p>
+                <p>
+                    Espresso shots topped with hot water create a light layer of<br />
+                    crema culminating in this wonderfully rich cup with depth and<br />
+                    nuance.
+                </p>
+                <div>
+                    <p><span class="calories">5</span> calories, 0g sugar, 0g fat</p>
+                    <div class="caution"></div>
+                </div>
+                <a href="">Full nutrition & ingredients list</a>
+            </div>
+        </aside>
+        <footer>
+            <hr />
+            <div class="footerWrap">
+                <div class="summaryWrap">
+                    <div class="summary_list">
+                        <h4>About Us</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Our Company</li>
+                            <li>Our Coffee</li>
+                            <li>Stories and News</li>
+                            <li>Starbucks Archive</li>
+                            <li>Investor Relations</li>
+                            <li>Customer Service</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>Careers</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Culture and Values</li>
+                            <li>Inclusion, Diversity, and Equity</li>
+                            <li>College Achievement Plan</li>
+                            <li>Alumni Community</li>
+                            <li>U.S. Careers</li>
+                            <li>International Careers</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>Social Impact</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>People</li>
+                            <li>Planet</li>
+                            <li>Environmental and Social Impact Reporting</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>For Business Partners</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Landlord Support Center</li>
+                            <li>Suppliers</li>
+                            <li>Corporate Gift Card Sales</li>
+                            <li>Office and Foodservice Coffee</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>Order and Pickup</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Order on the App</li>
+                            <li>Order on the Web</li>
+                            <li>Delivery</li>
+                            <li>Order and Pickup Options</li>
+                            <li>Explore and Find Coffee for Home</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="infoWrap">
+                    <div class="info_snsWrap">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="info_descWrap">
+                        <li>Privacy Notice</li>
+                        <li>Terms of Use</li>
+                        <li>Do Not Share My Personal Information</li>
+                        <li>CA Supply Chain Act</li>
+                        <li>Cookie Preferences</li>
+                    </ul>
+                    <p>© 2022 Starbucks Coffee Company. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            const $optionItems = document.querySelectorAll('.size_option_item > img');
+            const $calories = document.querySelectorAll('.calories');
+            const optionImgList = [
+                {
+                    src: 'https://www.starbucks.com/app-assets/06ea008c02e29bbc7f8f9885c1f400f2.svg',
+                },
+                {
+                    src: 'https://www.starbucks.com/app-assets/8f80d6b33459b4fada562d0c76fe0880.svg',
+                },
+                {
+                    src: 'https://www.starbucks.com/app-assets/a35163e609f2058eee276482e80dc491.svg',
+                },
+                {
+                    src: 'https://www.starbucks.com/app-assets/f3bd2f05578777d6c1a667ad64630cb4.svg',
+                },
+            ];
+
+            let optionImg = [];
+
+            for (let el of $optionItems) {
+                optionImg.push(el.src);
+            } // 처음 원본값을 담아줌.
+
+            function handleClickOption() {
+                //해당 이미지를 눌렀을때 바꾸기
+                for (let i = 0; i < $optionItems.length; i++) {
+                    if ($optionItems[i].src.includes(`${this.src}`)) {
+                        $optionItems[i].src = optionImgList[i].src;
+                        for (let j = 0; j < $calories.length; j++) {
+                            if (i == 0) {
+                                $calories[j].innerHTML = 5;
+                            } else if (i == 1) {
+                                $calories[j].innerHTML = 10;
+                            } else if (i == 2 || i == 3) {
+                                $calories[j].innerHTML = 15;
+                            }
+                        }
+                    } else if (!$optionItems[i].src.includes(`${this.src}`)) {
+                        $optionItems[i].src = optionImg[i];
+                    }
+                }
+            }
+
+            for (let i = 0; i < $optionItems.length; i++) {
+                $optionItems[i].addEventListener('click', handleClickOption);
+            }
+
+            const $circleRemote = document.querySelector('.size_options_circle_active');
+
+            console.log($circleRemote);
+
+            const $optionList = document.querySelectorAll('.size_option_item');
+
+            for (let i = 0; i < $optionList.length; i++) {
+                $optionItems[i].addEventListener('click', () => {
+                    let circleWidth = $optionList[i].offsetWidth;
+
+                    $circleRemote.style.left = `${circleWidth * i}px`;
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu: Starbucks Coffee Company</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/root.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/media.css" />
+        <link rel="stylesheet" href="./css/product.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="pc_header">
+                <div>
+                    <h1><img src="./assets/img/logo.png" alt="" /></h1>
+                    <nav>
+                        <ul>
+                            <li><a href="./main.html">menu</a></li>
+                            <li><a href="./reward.html">rewards</a></li>
+                            <li><a href="">gift cards</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href=""
+                                ><img src="./assets/img/bxs-map.svg" alt="" /> Find a store</a
+                            >
+                        </li>
+                        <button class="signIn" onmouseover="">Sign in</button>
+                        <button class="joinNow" onmouseover="">Join now</button>
+                    </ul>
+                </nav>
+            </div>
+            <div class="m_header">
+                <h1><img src="./assets/img/logo.png" alt="" /></h1>
+                <nav class="m_navigationWrap">
+                    <div class="menuWrap" onclick="menuOpen()">
+                        <div class="menu-item"></div>
+                        <div class="menu-item"></div>
+                        <div class="menu-item"></div>
+                    </div>
+                    <div class="m_navigation">
+                        <ul>
+                            <li>Menu</li>
+                            <li>Rewards</li>
+                            <li>Gift Cards</li>
+                        </ul>
+                        <div class="arrow_menuWrap"></div>
+                        <hr />
+                        <ul>
+                            <button>Sign in</button>
+                            <button>Join now</button>
+                            <li>
+                                <a href=""><img src="" alt="" />Find a store</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="prdtopWrap">
+                <div class="prdtop">
+                    <a href="./main.html">Menu</a>
+                    <span>/</span>
+                    <a href="./hot-coffees.html">Hot Coffees</a>
+                    <span>/</span>
+                    <span class="prdtop_name">Caffè Americano</span>
+                </div>
+            </div>
+            <div class="menuWrap">
+                <nav class="menu-list">
+                    <section>
+                        <h3>Drinks</h3>
+                        <ul>
+                            <li class="list-name">
+                                <a href="./hot-coffees.html">Hot Coffees</a>
+                            </li>
+                            <li class="list-name"><a href="#">Hot Teas</a></li>
+                            <li class="list-name">
+                                <a href="#">Hot Drinks</a>
+                            </li>
+                            <li class="list-name">
+                                <a href="#">Frappuccino® Blended Beverages</a>
+                            </li>
+                            <li class="list-name">
+                                <a href="#">Cold Coffees</a>
+                            </li>
+                            <li class="list-name"><a href="#">Iced Teas</a></li>
+                            <li class="list-name">
+                                <a href="#">Cold Drinks</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Food</h3>
+                        <ul>
+                            <li class="list-name">
+                                <a href="#">Hot Breakfast</a>
+                            </li>
+                            <li class="list-name"><a href="#">Bakery</a></li>
+                            <li class="list-name"><a href="#">Lunch</a></li>
+                            <li class="list-name">
+                                <a href="#">Snacks & Sweets</a>
+                            </li>
+                            <li class="list-name">
+                                <a href="#">Oatmeal & Yogurt</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>At Home Coffe</h3>
+                        <ul>
+                            <li class="list-name">
+                                <a href="#">Whole Bean</a>
+                            </li>
+                            <li class="list-name"><a href="#">Ground</a></li>
+                            <li class="list-name">
+                                <a href="#">VIA® Instant</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Merchandise</h3>
+                        <ul>
+                            <li class="list-name"><a href="#">Cold Cups</a></li>
+                            <li class="list-name"><a href="#">Tumblers</a></li>
+                            <li class="list-name"><a href="#">Other</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Gift Cards</h3>
+                        <ul>
+                            <li class="list-name">
+                                <a href="#">Happy Birthday</a>
+                            </li>
+                            <li class="list-name"><a href="#">Thank You</a></li>
+                            <li class="list-name">
+                                <a href="#">Traditional</a>
+                            </li>
+                        </ul>
+                    </section>
+                </nav>
+
+                <div class="menu-detail">
+                    <div class="menuhotcoffees">
+                        <a href="main.html"> Menu </a>
+                        <span> / </span>
+                        <span class="litteTitle"> Hot coffees </span>
+                    </div>
+
+                    <h1>Hot Coffees</h1>
+
+                    <h2>Americanos</h2>
+                    <section class="menu-detail-item">
+                        <div class="itemWrap hotcoffees">
+                            <a href="./product.html">
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/f12bc8af498d45ed92c5d6f1dac64062.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Caffè Americano</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <h2>Brewed Coffees</h2>
+                    <section class="menu-detail-item">
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/2c8f40a3b37648539d74e271479b3f9a.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Veranda Blend® </span>
+                            </a>
+                        </div>
+
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/d668acbc691b47249548a3eeac449916.jpg?impolicy=1by1_tight_288
+                                    "
+                                    alt=""
+                                />
+                                <span>Caffè Misto </span>
+                            </a>
+                        </div>
+
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/0279f9c5fa5941d2a65dd183d7a0b386.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span
+                                    >Featured Starbucks® Dark<br />
+                                    Roast Coffee</span
+                                >
+                            </a>
+                        </div>
+
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/bffaf0f27e124801abcabe09f05b0fb2.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Featured Medium Roast - Pike Place® Roast</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/51bf549cd8e9434da941fec33b820d39.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Decaf Pike Place® Roast</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <h2>Cappuccinos</h2>
+                    <section class="menu-detail-item">
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/5c515339667943ce84dc56effdf5fc1b.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Cappuccino</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <h2>Espresso Shots</h2>
+                    <section class="menu-detail-item">
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/ec519dd5642c41629194192cce582135.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Espresso</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/e9330b18ae524e69bdcbe97460d6f5bb.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Espresso Con Panna</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <h2>Flat Whites</h2>
+                    <section class="menu-detail-item">
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/fedee22e49724cd09fbcc7ee2e567377.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Flat White</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/77801559b72b469583f4d484adc1bfa7.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Honey Almondmilk Flat White</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <h2>Lattes</h2>
+                    <section class="menu-detail-item">
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/895d6b3916c14ad6862d88ce282e8838.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Pumpkin Spice Latte</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/7b4cdf46a99c4433bebcf3a8de9ad4f1.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Caramel Brulée Latte</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/be2046aabb0f48e1834752aabefc4d54.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Chestnut Praline Latte</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/a7fb63cb5bee4f3d9c8fd79088be6337.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Sugar Cookie Almondmilk Latte</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/b635f407bbcd49e7b8dd9119ce33f76e.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Caffè Latte</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/284e1571faa748f2889d0b566b71d578.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Cinnamon Dolce Latte</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/55083489399e435e81cf41d899051a5a.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Starbucks Reserve® Latte</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/049d23aac19047f4b3a40532cc24b510.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Starbucks Reserve® Hazelnut Bianco Latte</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/b635f407bbcd49e7b8dd9119ce33f76e.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Starbucks® Blonde Vanilla Latte</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <h2>Macchiatos</h2>
+                    <section class="menu-detail-item">
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/ea64c8877aa1400fa0b76de8210ad543.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Apple Crisp Oatmilk Macchiato</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/58db701349cb48738069e8c912e2b3ac.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Caramel Macchiato</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/26495f2a8b644fe8960dd74e1891b7b7.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Espresso Macchiato</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <h2>Mochas</h2>
+                    <section class="menu-detail-item">
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/9c7cbbff6b6e4b2a8a9bd403e83dcdde.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Peppermint Mocha</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/2ffc057bd85d421590c086870b34c0be.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Peppermint White Chocolate Mocha</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/5854eb90102d42c9a864d92e14aa8cdc.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Toasted White Chocolate Mocha</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/915736da018842e788147f7eab73db73.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Caffè Mocha</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/ce6342b5aeea4607a0e866057e3b5a4c.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Starbucks Reserve® Dark Chocolate Mocha</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/3eab25199e994b689fa5c047fc31f217.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>White Chocolate Mocha</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <h2>Clover® Brewed Coffees</h2>
+                    <section class="menu-detail-item">
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/e329d211d71f48dbbe48538e4f043c2d.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Starbucks Reserve® Christmas 2022 Clover®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/e0af85c3539840c8b6579963c4a7c935.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Hawai'i Ka'u Clover® Starbucks Reserve®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/b72d77e23ec84d8d8225b89d378cf1e5.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span
+                                    >Sun-Dried Zambia Ngoli Estate Clover® Starbucks Reserve®</span
+                                >
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/5df2e3fa34964a6fa6ecd8e4bd290f79.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Vietnam Da Lat Clover® Starbucks Reserve®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/48f8877dfbc841dfa2cdec27508786fa.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Clover® Starbucks Reserve® Costa Rica Naranjo</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/3596444d20f54635a16bd8cc88d90da1.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Clover Brewed® Pike Place® Roast</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/db7e8ec840df4ffc9e559104f15674c8.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Organic Yukon Blend® Clover®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/9fab574d1586424da56c6858979ccb69.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Veranda Blend® Clover®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/701b4e00090645d399fb2bb839e0eaea.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Decaf Sumatra Clover®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/e01bbab763c240fd82c793a7c37d0b87.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Caffé Verona® Clover®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/313b9e0184ae4eafa15a2a3afd2a07e2.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Clover Brewed® Decaf Pike Place® Roast</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/0e0b53c4fc97498f84258a6b5431cdc9.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Espresso Roast Clover®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/8e641c4645fc42bd9547f8b8a1e8ed5e.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Decaf Espresso Roast Clover®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/3b6b98a6271b4aba8838e7b2e2ab3dc8.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Italian Roast Clover®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/9382f65cacc044a3ad341fcd239ebc76.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Komodo Dragon Clover®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/6bf82aafb31641df88afd70fc03af950.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Sumatra Clover®</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <h2>Coffee Travelers</h2>
+                    <section class="menu-detail-item">
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/0992e70336d7446093fe8d50cb3377f2.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Coffee Traveler - Veranda Blend®</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/9d5739c00da14ea8acc0497989b08016.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Coffee Traveler - Dark Roast</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/9d5739c00da14ea8acc0497989b08016.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Coffee Traveler - Pike Place® Roast</span>
+                            </a>
+                        </div>
+                        <div class="itemWrap hotcoffees">
+                            <a>
+                                <img
+                                    src="https://globalassets.starbucks.com/assets/9d5739c00da14ea8acc0497989b08016.jpg?impolicy=1by1_tight_288"
+                                    alt=""
+                                />
+                                <span>Coffee Traveler - Decaf Pike Place® Roast</span>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <hr />
+            <div class="footerWrap">
+                <div class="summaryWrap">
+                    <div class="summary_list">
+                        <h4>About Us</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Our Company</li>
+                            <li>Our Coffee</li>
+                            <li>Stories and News</li>
+                            <li>Starbucks Archive</li>
+                            <li>Investor Relations</li>
+                            <li>Customer Service</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>Careers</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Culture and Values</li>
+                            <li>Inclusion, Diversity, and Equity</li>
+                            <li>College Achievement Plan</li>
+                            <li>Alumni Community</li>
+                            <li>U.S. Careers</li>
+                            <li>International Careers</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>Social Impact</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>People</li>
+                            <li>Planet</li>
+                            <li>Environmental and Social Impact Reporting</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>For Business Partners</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Landlord Support Center</li>
+                            <li>Suppliers</li>
+                            <li>Corporate Gift Card Sales</li>
+                            <li>Office and Foodservice Coffee</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>Order and Pickup</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Order on the App</li>
+                            <li>Order on the Web</li>
+                            <li>Delivery</li>
+                            <li>Order and Pickup Options</li>
+                            <li>Explore and Find Coffee for Home</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="infoWrap">
+                    <div class="info_snsWrap">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="info_descWrap">
+                        <li>Privacy Notice</li>
+                        <li>Terms of Use</li>
+                        <li>Do Not Share My Personal Information</li>
+                        <li>CA Supply Chain Act</li>
+                        <li>Cookie Preferences</li>
+                    </ul>
+                    <p>© 2022 Starbucks Coffee Company. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
