@@ -350,7 +350,7 @@
                     <div>
                         <div>
                             <label for="starcode">* Enter your Star Code</label>
-                            <input type="text" id="starcode" onfocusout="focusout()" "/>
+                            <input type="text" id="starcode" />
                             <div class="starcode_error" display="none">
                                 <span class="color_red">X</span> Please enter a Star code.
                             </div>
@@ -367,22 +367,16 @@
                 </div>
             </div>
             <script>
-                const $input = document.querySelector('.input_code > div > div > div > div');
+                const $starDiv = document.querySelector('.input_code > div > div > div > div');
                 const $label = document.querySelector(
                     '.input_code > div > div > div > div > label'
                 );
                 console.log($label);
                 const $starcode = document.getElementById('starcode');
                 const $starcode_error = document.querySelector('.starcode_error');
-                console.dir($input);
+                console.dir($starDiv);
 
                 function focusStarCode() {
-                    // $input.style.border = '1px solid green';
-                    // $label.style.top ='0';
-                    // $label.style.border='5px solid #fff';
-                    // $label.style.background ='#fff';
-                    // $label.style.color = 'green';
-                    // $label.style.fontSize ='1.6rem';
                     change();
                     $label.style.transition = '0.2s';
                     $label.style.animationFillMode = 'forwards';
@@ -402,9 +396,9 @@
                 function blurStarCode() {
                     if ($starcode.value) {
                         $label.style.color = '#a7a7a7';
-                        $input.style.border = '0.1rem solid #a7a7a7';
+                        $starDiv.style.border = '0.1rem solid #a7a7a7';
                     } else if (!$starcode.value) {
-                        $input.style.border = '1px solid red';
+                        $starDiv.style.border = '1px solid red';
                         $label.style.top = '50%';
                         $label.style.border = '';
                         $label.style.background = '';
@@ -414,7 +408,7 @@
                     }
                 }
                 function change() {
-                    $input.style.border = '1px solid green';
+                    $starDiv.style.border = '1px solid green';
                     $label.style.top = '0';
                     $label.style.border = '5px solid #fff';
                     $label.style.background = '#fff';
