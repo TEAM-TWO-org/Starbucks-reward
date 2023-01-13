@@ -1,0 +1,27 @@
+/* 메인 콘텐츠 요소 */
+main > .nav_underbar {
+    height: 5rem;
+    background-color: var(--rewards-nav-bottom);
+    display: flex;
+    align-items: center;
+}
+
+main > .nav_underbar > p {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1440px;
+    color: #fff;
+    font-size: var(--nav-li-size);
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+}
+
+/* 메인 > 아티클 요소 */
+article {
+    background: url("../assets/img/xl-hero-desktop_2021.webp") no-repeat center
+        center;
+    background-color: var(--sec-bg-color);
+    background-position: 50%;
+    background-size: cover;
+    height: 100%;
+}
