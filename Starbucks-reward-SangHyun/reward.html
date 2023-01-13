@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu: Starbucks Coffee Company</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/root.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/media.css" />
+        <link rel="stylesheet" href="./css/product.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="pc_header">
+                <div>
+                    <h1><img src="./assets/img/logo.png" alt="" /></h1>
+                    <nav>
+                        <ul>
+                            <li><a href="./main.html">menu</a></li>
+                            <li><a href="./reward.html">rewards</a></li>
+                            <li><a href="">gift cards</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href=""
+                                ><img src="./assets/img/bxs-map.svg" alt="" />
+                                Find a store</a
+                            >
+                        </li>
+                        <button class="signIn" onmouseover="">Sign in</button>
+                        <button class="joinNow" onmouseover="">Join now</button>
+                    </ul>
+                </nav>
+            </div>
+            <div class="m_header">
+                <h1><img src="./assets/img/logo.png" alt="" /></h1>
+                <nav class="m_navigationWrap">
+                    <div class="menuWrap" onclick="menuOpen()">
+                        <div class="menu-item"></div>
+                        <div class="menu-item"></div>
+                        <div class="menu-item"></div>
+                    </div>
+                    <div class="m_navigation">
+                        <ul>
+                            <li>Menu</li>
+                            <li>Rewards</li>
+                            <li>Gift Cards</li>
+                        </ul>
+                        <div class="arrow_menuWrap"></div>
+                        <hr />
+                        <ul>
+                            <button>Sign in</button>
+                            <button>Join now</button>
+                            <li>
+                                <a href=""><img src="" alt="" />Find a store</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="prdtopWrap prdReward">
+                <div class="prdtop">Starbucks® Rewards</div>
+            </div>
+            <div class="prdReward_bnr">
+                <div class="prdReward_desc">
+                    <h3>
+                        FREE COFFEE<br />
+                        IS A TAP AWAY
+                    </h3>
+                    <p>Join now to start earning Rewards.</p>
+                    <a href="">Join now</a>
+                    <p>Or join in the app for the best experience</p>
+                </div>
+            </div>
+            <div class="prdReward_contents">
+                <div
+                    class="prdReward_contents_container prdReward_contents_container_list01"
+                >
+                    <div class="prdReward_contents_container01_title">
+                        <h3>Getting started is easy</h3>
+                        <p>Earn Stars and get rewarded in a few easy steps.</p>
+                    </div>
+                    <ul class="prdReward_contents_container01_list">
+                        <li>
+                            <img
+                                src="./assets/img/getting-started-1@2x.webp"
+                                alt=""
+                            />
+                            <h4>Create an account</h4>
+                            <p>
+                                To get started, join now. You can also join in
+                                the app to get access to the full range of
+                                Starbucks® Rewards benefits.
+                            </p>
+                        </li>
+                        <li>
+                            <img
+                                src="./assets/img/getting-started-2@2x.webp"
+                                alt=""
+                            />
+                            <h4>Order and pay how you'd like</h4>
+                            <p>
+                                Use cash, credit/debit card or save some time
+                                and pay right through the app. You'll collect
+                                Stars all ways. Learn how
+                            </p>
+                        </li>
+                        <li>
+                            <img
+                                src="./assets/img/getting-started-3@2x.webp"
+                                alt=""
+                            />
+                            <h4>Earn Stars, get Rewards</h4>
+                            <p>
+                                As you earn Stars, you can redeem them for
+                                Rewards—like free food, drinks, and more. Start
+                                redeeming with as little as 25 Stars!
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="prdReward_contents_container prdReward_contents_container_list02"
+                >
+                    <div class="prdReward_forfree">
+                        <h3>Get your favorites for free</h3>
+                        <ul>
+                            <li class="for_free_score active">
+                                25<span>★</span>
+                            </li>
+                            <li class="for_free_score">50<span>★</span></li>
+                            <li class="for_free_score">150<span>★</span></li>
+                            <li class="for_free_score">200<span>★</span></li>
+                            <li class="for_free_score">400<span>★</span></li>
+                            <hr />
+                        </ul>
+                    </div>
+                    <div class="prdReward_forfree_cont">
+                        <div class="prdReward_forfree_cont_list">
+                            <div
+                                class="prdReward_forfree_cont_box prdReward_forfree_cont_box_item01 opacity_active"
+                            >
+                                <img src="./assets/img/025.webp" alt="" />
+                                <div>
+                                    <h3>Customize your drink</h3>
+                                    <p>
+                                        Make your drink just right with an
+                                        extra<br />
+                                        espresso shot, dairy substitute or a
+                                        dash of<br />
+                                        your favorite syrup.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="prdReward_forfree_cont_box prdReward_forfree_cont_box_item02"
+                            >
+                                <img src="./assets/img/050.webp" alt="" />
+                                <div>
+                                    <h3>
+                                        Brewed hot coffee, bakery<br />
+                                        item or hot tea
+                                    </h3>
+                                    <p>
+                                        Pair coffee cake or an almond croissant
+                                        with<br />
+                                        your fresh cup of hot brew.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="prdReward_forfree_cont_box prdReward_forfree_cont_box_item03"
+                            >
+                                <img src="./assets/img/150.webp" alt="" />
+                                <div>
+                                    <h3>
+                                        Handcrafted drink, hot<br />
+                                        breakfast or parfait
+                                    </h3>
+                                    <p>
+                                        Have a really good morning with a
+                                        breakfast<br />
+                                        sandwich, oatmeal or your favorite
+                                        drink.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="prdReward_forfree_cont_box prdReward_forfree_cont_box_item04"
+                            >
+                                <img src="./assets/img/200.webp" alt="" />
+                                <div>
+                                    <h3>
+                                        Salad, sandwich or protein<br />
+                                        box
+                                    </h3>
+                                    <p>
+                                        Nourish your day with a hearty
+                                        Chipotle<br />
+                                        Chicken Wrap or Eggs & Cheese Protein
+                                        Box.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="prdReward_forfree_cont_box prdReward_forfree_cont_box_item05"
+                            >
+                                <img src="./assets/img/400.webp" alt="" />
+                                <div>
+                                    <h3>
+                                        Select merchandise or at-<br />home
+                                        coffee
+                                    </h3>
+                                    <p>
+                                        Take home a signature cup, a bag of
+                                        coffee or<br />
+                                        your choice of select coffee
+                                        accessories.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        const $scoreList =
+                            document.querySelectorAll(".for_free_score");
+                        console.log($scoreList);
+
+                        const $ffBoxList = document.querySelectorAll(
+                            ".prdReward_forfree_cont_box"
+                        );
+                        console.log($ffBoxList[0].classList[2]);
+
+                        const $scoreLine = document.querySelector(
+                            ".prdReward_forfree > ul > hr"
+                        );
+
+                        let scoreLineWidth = `${$scoreList[0].offsetWidth}px`;
+                        $scoreLine.style.width = scoreLineWidth;
+
+                        for (let i = 0; i < $scoreList.length; i++) {
+                            $scoreList[i].addEventListener("click", () => {
+                                if (
+                                    $ffBoxList[i].classList[2] ===
+                                    "opacity_active"
+                                ) {
+                                    $ffBoxList[i].classList.add(
+                                        "opacity_active"
+                                    );
+                                } else {
+                                    for (
+                                        let j = 0;
+                                        j < $scoreList.length;
+                                        j++
+                                    ) {
+                                        $ffBoxList[j].classList.remove(
+                                            "opacity_active"
+                                        );
+                                    }
+                                }
+                                $ffBoxList[i].classList.add("opacity_active");
+                                $scoreLine.style.left = `${
+                                    $scoreList[i].offsetWidth * i
+                                }px`;
+                            });
+                        }
+                    </script>
+                </div>
+                <div
+                    class="prdReward_contents_container prdReward_contents_container_list03"
+                >
+                    <div class="prdReward_contents_container01_title">
+                        <h3>Endless Extras</h3>
+                        <p>
+                            Joining Starbucks® Rewards means unlocking access to
+                            exclusive benefits. Say hello to easy<br />
+                            ordering, tasty Rewards and—yes, free coffee.
+                        </p>
+                    </div>
+                    <ul class="prdReward_contents_container01_list">
+                        <li>
+                            <img
+                                src="./assets/img/1-fun-freebies.webp"
+                                alt=""
+                            />
+                            <h4>Fun freebies</h4>
+                            <p>
+                                Not only can you earn free coffee, look forward
+                                to a birthday treat plus coffee and tea refills.
+                            </p>
+                            <a href="">Learn more</a>
+                        </li>
+                        <li>
+                            <img
+                                src="./assets/img/2-order-and-pay-ahead.webp"
+                                alt=""
+                            />
+                            <h4>Order & pay ahead</h4>
+                            <p>
+                                Enjoy the convenience of in-store, curbside or
+                                drive-thru pickup at select stores.
+                            </p>
+                            <a href="">Learn more</a>
+                        </li>
+                        <li>
+                            <img
+                                src="./assets/img/3-get-to-free-faster.webp"
+                                alt=""
+                            />
+                            <h4>Get to free faster</h4>
+                            <p>
+                                Earn Stars even quicker with Bonus Star
+                                challenges, Double Star Days and exciting games.
+                            </p>
+                            <a href="">Learn more</a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="prdReward_contents_container prdReward_contents_container_list04"
+                >
+                    <div class="prdReward_contents_container_earnStars">
+                        <div
+                            class="prdReward_contents_container_earnStars_title"
+                        >
+                            <h3>Cash or card, you earn Stars</h3>
+                            <p>
+                                No matter how you pay, you can earn Stars with
+                                your morning coffee. Those Stars add up to<br />
+                                (really delicious) Rewards.
+                            </p>
+                        </div>
+                        <div
+                            class="prdReward_contents_container_earnStars_list"
+                        >
+                            <div>
+                                <div>
+                                    <h3>1<span>★</span> per dollar</h3>
+                                    <p>Pay as you go</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/1A.png" alt="" />
+                                    <div>
+                                        <h4>Scan and pay separately</h4>
+                                        <p>
+                                            Use cash or credit/debit card at
+                                            the<br />
+                                            register.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/1B.webp" alt="" />
+                                    <div>
+                                        <h4>Save payment in the app</h4>
+                                        <p>
+                                            Check-out faster by saving a<br />
+                                            credit/debit card or PayPal to
+                                            your<br />
+                                            account. You’ll be able to order
+                                            ahead or<br />
+                                            scan and pay at the register in one
+                                            step.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div>
+                                <div>
+                                    <h3>2<span>★</span> per dollar</h3>
+                                    <p>Add funds in the app</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/2A.webp" alt="" />
+                                    <div>
+                                        <h4>Preload</h4>
+                                        <p>
+                                            To save time and earn Stars twice
+                                            as<br />
+                                            fast, add money to your digital<br />
+                                            Starbucks Card using any payment<br />
+                                            option. Scan and pay in one step
+                                            or<br />
+                                            order ahead in the app.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/2B.webp" alt="" />
+                                    <div>
+                                        <h4>Register your gift card</h4>
+                                        <p>
+                                            Then use it to pay through the app.
+                                            You<br />
+                                            can even consolidate balances
+                                            from<br />
+                                            multiple cards in one place.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="input_code">
+            <div>
+                <div>
+                    <h3>Star Codes</h3>
+                    <p>
+                        Yesssss. You’ve got Stars in your hand. Enter your code
+                        here and we’ll add Stars to your account.
+                    </p>
+                    <div>
+                        <div>
+                            <label for="starcode">* Enter your Star Code</label>
+                            <input type="text" id="starcode" />
+                            <div class="starcode_error">
+                                X Please enter a Star code.
+                            </div>
+                        </div>
+                        <button type="submit">submit</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>Questions?</h3>
+                    <p>
+                        We want to help in any way we can. You can ask your
+                        barista anytime or we’ve answered the most commonly
+                        asked questions right over here
+                    </p>
+                </div>
+            </div>
+        </section>
+        <script>
+            const $starDive = document.querySelector(
+                ".input_code > div > div > div > div"
+            );
+            const $label = document.querySelector(
+                ".input_code > div > div > div > div > label"
+            );
+            console.log($label);
+            const $starcode = document.getElementById("starcode");
+            const $starcode_error = document.querySelector(".starcode_error");
+            console.dir($starDive);
+
+            function focusStarCode() {
+                change();
+                $label.style.transition = "0.2s";
+                $label.style.animationFillMode = "forwards";
+                if (!$starcode.value) {
+                    $label.style.color = "red";
+                }
+            }
+
+            function handlekeyupStarCode() {
+                if (!$starcode.value) {
+                    $starcode_error.style.display = "block";
+
+                    $label.style.color = "red";
+                } else if ($starcode.value) {
+                    $starcode_error.style.display = "none";
+                    $label.style.color = "green";
+                }
+            }
+
+            function blurStarCode() {
+                if ($starcode.value) {
+                    $label.style.color = "#a7a7a7";
+                    $starDive.style.border = "0.1rem solid #a7a7a7";
+                } else if (!$starcode.value) {
+                    $starDive.style.border = "1px solid red";
+                    $label.style.top = "50%";
+                    $label.style.border = "";
+                    $label.style.background = "";
+                    $label.style.color = "red";
+                    $label.style.fontSize = "2.2rem";
+                    $starcode_error.style.display = "block";
+                }
+            }
+            function change() {
+                $starDive.style.border = "1px solid green";
+                $label.style.top = "0";
+                $label.style.border = "5px solid #fff";
+                $label.style.background = "#fff";
+                $label.style.color = "green";
+                $label.style.fontSize = "1.6rem";
+            }
+
+            $starcode.addEventListener("focus", focusStarCode);
+            $starcode.addEventListener("keyup", handlekeyupStarCode);
+            $starcode.addEventListener("blur", blurStarCode);
+        </script>
+        <aside class="reward_aside">
+            <div>
+                <p>At participating stores. Restrictions apply.</p>
+                <div>
+                    <div>
+                        <div>
+                            <h4>EARNING STARS</h4>
+                            <p>
+                                Stars cannot be earned on purchases of alcohol,
+                                Starbucks Cards or Starbucks Card reloads.
+                            </p>
+                            <p>
+                                Earn 1 Star per $1 spent when you scan your
+                                member barcode in the app, then pay with cash,
+                                credit/debit cards or mobile wallets at
+                                participating stores. You can also earn 1 Star
+                                per $1 spent when you link a payment method and
+                                pay directly through the app.
+                            </p>
+                            <p>
+                                Earn 2 Stars per $1 spent when you load funds
+                                and pay with your digital Starbucks Card in the
+                                app. You can also earn 2 Stars per $1 spent when
+                                you pay in-person at a participating store with
+                                your registered physical Starbucks Card or scan
+                                your member barcode in the app, and then use any
+                                physical Starbucks Card (regardless of whether
+                                it is registered) to complete the purchase.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>BENEFITS</h4>
+                            <p>
+                                Free refills available during same in-store
+                                visit only. To qualify for the Birthday Reward,
+                                you must have made at least one Star-earning
+                                transaction.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>TERMS OF USE</h4>
+                            <p>
+                                For full program details visit
+                                starbucks.com/rewards/terms
+                            </p>
+                            <p>
+                                * Earn 1 Star per $1 when digitally loading your
+                                Starbucks Card with your Starbucks® Rewards
+                                Visa® Card: See your Card Rewards Program
+                                Agreement for more details.
+                            </p>
+                            <p>
+                                Starbucks® Rewards benefits are available at
+                                participating Starbucks stores. Not all stores
+                                have the ability to honor Rewards at this time.
+                                Visit the Starbucks Store Locator and search for
+                                locations honoring “Redeem Rewards”.
+                            </p>
+                            <p>
+                                Deposit and credit card products provided by
+                                JPMorgan Chase Bank, N.A. Member FDIC
+                            </p>
+                        </div>
+                        <div>
+                            <h4>REDEEMING REWARDS</h4>
+                            <p>
+                                Rewards cannot be redeemed for alcoholic
+                                beverages or multi-serve items. Not all stores
+                                honor tiered Rewards. Select stores redeem 150
+                                Stars for free food or drink items only.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <footer>
+            <hr />
+            <div class="footerWrap">
+                <div class="summaryWrap">
+                    <div class="summary_list">
+                        <h4>About Us</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Our Company</li>
+                            <li>Our Coffee</li>
+                            <li>Stories and News</li>
+                            <li>Starbucks Archive</li>
+                            <li>Investor Relations</li>
+                            <li>Customer Service</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>Careers</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Culture and Values</li>
+                            <li>Inclusion, Diversity, and Equity</li>
+                            <li>College Achievement Plan</li>
+                            <li>Alumni Community</li>
+                            <li>U.S. Careers</li>
+                            <li>International Careers</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>Social Impact</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>People</li>
+                            <li>Planet</li>
+                            <li>Environmental and Social Impact Reporting</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>For Business Partners</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Landlord Support Center</li>
+                            <li>Suppliers</li>
+                            <li>Corporate Gift Card Sales</li>
+                            <li>Office and Foodservice Coffee</li>
+                        </ul>
+                    </div>
+                    <div class="summary_list">
+                        <h4>Order and Pickup</h4>
+                        <div class="menu_remote"></div>
+                        <ul>
+                            <li>Order on the App</li>
+                            <li>Order on the Web</li>
+                            <li>Delivery</li>
+                            <li>Order and Pickup Options</li>
+                            <li>Explore and Find Coffee for Home</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="infoWrap">
+                    <div class="info_snsWrap">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="info_descWrap">
+                        <li>Privacy Notice</li>
+                        <li>Terms of Use</li>
+                        <li>Do Not Share My Personal Information</li>
+                        <li>CA Supply Chain Act</li>
+                        <li>Cookie Preferences</li>
+                    </ul>
+                    <p>© 2022 Starbucks Coffee Company. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
