@@ -3,7 +3,6 @@
 }
 main {
     position: relative;
-    padding-top: 9rem;
 }
 ul {
     list-style: none;
@@ -13,9 +12,11 @@ ul {
 
 .menuWrap {
     position: relative;
-    padding-left: 13rem;
     display: flex;
-    width: 90%;
+    /* width: 95%;
+    margin: 0 auto; */
+    padding-left: 13rem;
+    margin-top: 4rem;
 }
 
 .menu-list {
