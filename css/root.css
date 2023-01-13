@@ -1,0 +1,39 @@
+/* 공통 css 네이밍 */
+
+/* 브랜드 컬러 */
+:root {
+    --rewards-nav-bottom: #1e3932;
+    --sec-bg-color: rgb(212, 233, 226);
+    --earn-bg-color: #f2f0eb;
+    --desc-bg-color: #f9f9f9;
+    --brand-common-color: #00754a;
+    --brand-font-color: #00a862;
+}
+
+/* 폰트 사이즈 */
+:root {
+    --nav-li-size: 1.4rem;
+    --bnr-h2-size: 3.6rem;
+    --bnr-p-size: 1.9rem;
+    --sec-h3-size: 2.8rem;
+    --sec-h4-size: 2.4rem;
+    --sec-h5-size: 1.9rem;
+    --sec-p-size: 1.6rem;
+    --btn-js-size: 2.4rem;
+    --sec-span-size: 2.4rem;
+}
+
+/* 폰트 굵기 */
+:root {
+    --font-extrabold: sodosans-black;
+    --font-bold: sodosans-bold;
+    --font-semibold: sodosans-semi;
+    --font-regular: sodosans-regular;
+    --font-light: sodosans-light;
+    --font-thin: sodosans-thin;
+}
+
+/* 폰트 컬러 */
+:root {
+    --common-color: rgba(0, 0, 0, 0.87);
+}
